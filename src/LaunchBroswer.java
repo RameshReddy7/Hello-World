@@ -7,7 +7,7 @@ public class LaunchBroswer {
 	public static void main(String[] args) {
 
 		WebDriver driver = new FirefoxDriver();
-		driver.navigate().to("http://toolsqa.com/automation-practice-form/");
+		driver.get("http://toolsqa.com/automation-practice-form/");
 		driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("harish");
 		driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("lade");
 		driver.findElement(By.xpath("//input[@id='sex-0']")).click();
